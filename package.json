@@ -47,7 +47,7 @@
     "open:client": "ng serve --open",
     "start": "npm run build && node app.js",
     "build": "npm run build:prod && npm run deploy-assets",
-    "deploy-assets": "rm -f assets/*.js && rm -f assets/*.css && mv -f client/dist/* assets",
+    "deploy-assets": "rm -f ./assets/*.js && rm -f ./assets/*.css && mv -f ./client/dist/* ./assets",
     "build:dev": "ng build --configuration development",
     "build:prod": "ng build",
     "build:aot": "ng build --aot",
